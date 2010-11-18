@@ -15,4 +15,3 @@ Planned features, *if* anyone asks:
 * fonts other than Jerome
 * IE 9 support
 * newfangled (not Read's) names
-* nicer print stylesheet
