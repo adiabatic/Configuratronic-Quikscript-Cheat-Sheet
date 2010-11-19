@@ -296,6 +296,7 @@
 <script>
     function $(id) { return document.getElementById(id); }
     function $$(selector) { return document.querySelector(selector); }
+    function dqs(selector) { return document.querySelector(selector); }
     function $$$(selector) { return document.querySelectorAll(selector); }
     function addGlobalStyle(css) {
         var style = document.createElement('style');
@@ -305,13 +306,12 @@
     
     'ipa xs readName no'.split(' ').forEach(function(className) {
         $$('[name=' +className+']').addEventListener('change', function() {
-            console.log(this);
             if (this.checked) {
                 addGlobalStyle('.'+className+' { display: table-row; }');
             } else {
                 addGlobalStyle('.'+className+' { display: none; }');
             }
-        });        
+        }, false); // this 'false' needs to be here for IE9, I think; not sure why       
     });
 
 </script>
