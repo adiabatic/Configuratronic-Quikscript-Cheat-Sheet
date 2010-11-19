@@ -40,7 +40,11 @@
             font-family: Menlo, monospace;
         }
         
-        .xs, .readName, .no {
+        .ls {
+            font-variant: small-caps;
+        }
+        
+        .xs, .readName, .no, .ls {
             display: none;
         }
         
@@ -69,29 +73,29 @@
         <td>v
         <td>s
     <tr class='ipa'>
-        <td>[p]
-        <td>[b]
-        <td>[t]
-        <td>[d]
-        <td>[k]
-        <td>[g]
-        <td>[θ]
-        <td>[ð]
-        <td>[f]
-        <td>[v]
-        <td>[s]
+        <td>/p/
+        <td>/b/
+        <td>/t/
+        <td>/d/
+        <td>/k/
+        <td>/g/
+        <td>/θ/
+        <td>/ð/
+        <td>/f/
+        <td>/v/
+        <td>/s/
     <tr class='xs'>
-        <td>[p]
-        <td>[b]
-        <td>[t]
-        <td>[d]
-        <td>[k]
-        <td>[g]
-        <td>[T]
-        <td>[D]
-        <td>[f]
-        <td>[v]
-        <td>[s]
+        <td>/p/
+        <td>/b/
+        <td>/t/
+        <td>/d/
+        <td>/k/
+        <td>/g/
+        <td>/T/
+        <td>/D/
+        <td>/f/
+        <td>/v/
+        <td>/s/
     <tr class='readName'>
         <td>pea
         <td>bay
@@ -131,29 +135,29 @@
         <td>N
         <td>m
     <tr class='ipa'>
-        <td>[z]
-        <td>[ʃ]
-        <td>[ʒ]
-        <td>[tʃ]
-        <td>[dʒ]
-        <td>[j]
-        <td>[w]
-        <td>[h]
-        <td>[ʍ]
-        <td>[ŋ]
-        <td>[m]
+        <td>/z/
+        <td>/ʃ/
+        <td>/ʒ/
+        <td>/tʃ/
+        <td>/dʒ/
+        <td>/j/
+        <td>/w/
+        <td>/h/
+        <td>/ʍ/
+        <td>/ŋ/
+        <td>/m/
     <tr class='xs'>
-        <td>[z]
-        <td>[S]
-        <td>[Z]
-        <td>[tS]
-        <td>[dZ]
-        <td>[j]
-        <td>[w]
-        <td>[h]
-        <td>[W]
-        <td>[N]
-        <td>[m]
+        <td>/z/
+        <td>/S/
+        <td>/Z/
+        <td>/tS/
+        <td>/dZ/
+        <td>/j/
+        <td>/w/
+        <td>/h/
+        <td>/W/
+        <td>/N/
+        <td>/m/
      <tr class='readName'>
         <td>zoo
         <td>she
@@ -191,25 +195,35 @@
         <td>A
         <td>F
     <tr class='ipa'>
-        <td>[n]
-        <td>[l]
-        <td>[ɹ]
-        <td>[ɪ]
-        <td>[i]
-        <td>[ɛ]
-        <td>[eɪ]
-        <td>[æ]
-        <td>[aɪ]
+        <td>/n/
+        <td>/l/
+        <td>/ɹ/
+        <td>/ɪ/
+        <td>/i/
+        <td>/ɛ/
+        <td>/eɪ/
+        <td>/æ/
+        <td>/aɪ/
     <tr class='xs'>
-        <td>[n]
-        <td>[l]
-        <td>[r\]
-        <td>[I]
-        <td>[i]
-        <td>[E]
-        <td>[eI]
-        <td>[{]
-        <td>[aI]
+        <td>/n/
+        <td>/l/
+        <td>/r\/
+        <td>/I/
+        <td>/i/
+        <td>/E/
+        <td>/eI/
+        <td>/{/
+        <td>/aI/
+    <tr class='ls'>
+        <td>
+        <td>
+        <td>
+        <td>kit
+        <td>fleece
+        <td>dress
+        <td>face
+        <td>trap
+        <td>price
     <tr class='readName'>
         <td>no
         <td>low
@@ -243,25 +257,35 @@
         <td>U
         <td>M
     <tr class='ipa'>
-        <td>[ɑ]
-        <td>[ɔ]
-        <td>[ɒ]
-        <td>[ɔɪ]
-        <td>[ə]
-        <td>[aʊ]
-        <td>[o]
-        <td>[ʊ]
-        <td>[u]    
+        <td>/ɑ/
+        <td>/ɔ/
+        <td>/ɒ/
+        <td>/ɔɪ/
+        <td>/ə/
+        <td>/aʊ/
+        <td>/oʊ ~ əʊ/
+        <td>/ʊ/
+        <td>/u/    
     <tr class='xs'>
-        <td>[A]
-        <td>[O]
-        <td>[Q]
-        <td>[OI]
-        <td>[@]
-        <td>[aU]
-        <td>[o]
-        <td>[U]
-        <td>[u]    
+        <td>/A/
+        <td>/O/
+        <td>/Q/
+        <td>/OI/
+        <td>/@/
+        <td>/aU/
+        <td>/oU ~ @U/
+        <td>/U/
+        <td>/u/    
+    <tr class='ls'>
+        <td>palm
+        <td>thought
+        <td>lot
+        <td>choice
+        <td>comma
+        <td>mouth
+        <td>goat
+        <td>foot
+        <td>goose   
     <tr class='readName'>
         <td>ah
         <td>awe
@@ -288,6 +312,7 @@
 <form onsubmit='return false;'>
     <div><input type='checkbox' name='ipa' checked>IPA</div>
     <div><input type='checkbox' name='xs'>X-SAMPA</div>
+    <div><input type='checkbox' name='ls'>Lexical Set Names</div>
     <div><input type='checkbox' name='readName'>Read’s Names</div>
     <div><input type='checkbox' name='no'>Numbers</div>
     <p>Mystified? <a href='http://en.wikipedia.org/wiki/Quikscript'>Read</a>.</p>
@@ -304,7 +329,7 @@
         $$('head').appendChild(style)
     }
     
-    'ipa xs readName no'.split(' ').forEach(function(className) {
+    'ipa xs ls readName no'.split(' ').forEach(function(className) {
         $$('[name=' +className+']').addEventListener('change', function() {
             if (this.checked) {
                 addGlobalStyle('.'+className+' { display: table-row; }');
