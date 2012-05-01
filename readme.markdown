@@ -5,13 +5,7 @@ Can't remember what sort of sound .Ox makes? Forgetting whether it's .Foot or .O
 
 Works in:
 
+* IE 8 and newer
 * Safari
-* MobileSafari
 * Chrome
 * Firefox
-
-Planned features, *if* anyone asks:
-
-* fonts other than Jerome
-* newfangled (not Read's) names
-* nicer print stylesheet
