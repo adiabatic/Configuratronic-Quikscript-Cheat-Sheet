@@ -372,7 +372,7 @@
 
 <form onsubmit='return false;'>
     <div>
-        <input type='checkbox' name='qsThoth' checked>
+        <input type='checkbox' name='qsThoth' id='qsThoth' checked>
         <label for='qsThoth'>Thoth</label>
     </div>
     <div>
@@ -407,37 +407,52 @@
 </form>
 
 <script>
-    function $(id) { return document.getElementById(id); }
-    function $$(selector) { return document.querySelector(selector); }
-    function dqs(selector) { return document.querySelector(selector); }
-    function $$$(selector) { return document.querySelectorAll(selector); }
-    function addGlobalStyle(css) {
-        var style = document.createElement('style');
-        style.innerHTML = css;
-        $$('head').appendChild(style)
-    }
-    
-    var i=0;
-    
-    'qsJerome qsThoth ipa xs ls readName no'.split(' ').forEach(function(className) {
-        $$('[name=' +className+']').addEventListener('change', function() {
-            if (this.checked) {
-                addGlobalStyle('.'+className+' { display: table-row; }');
+    (function () {
+        "use strict";
+        function $(id) { return document.getElementById(id); }
+        function $$(selector) { return document.querySelector(selector); }
+        function dqs(selector) { return document.querySelector(selector); }
+        function $$$(selector) { return document.querySelectorAll(selector); }
+        function addGlobalStyle(css) {
+            var style = document.createElement('style');
+            style.innerHTML = css;
+            $$('head').appendChild(style);
+        }
+        
+        function toggleDisplay(elem, className) {
+            if (elem.checked) {
+                addGlobalStyle('.' + className + ' { display: table-row; }');
             } else {
-                addGlobalStyle('.'+className+' { display: none; }');
+                addGlobalStyle('.' + className + ' { display: none; }');
             }
-        }, false);       
-    });
-
-    $$('input[name=font][value=Jerome]').addEventListener('change', function() {
-        addGlobalStyle('.qsJerome { display: table-row; } .qsThoth { display: none; }');
-    }, false);
-
-    $$('input[name=font][value=Thoth]').addEventListener('change', function() {
-        addGlobalStyle('.qsThoth { display: table-row; } .qsJerome { display: none; }');
-    }, false);
-
+        }    
+        
+        
+        var i = 0,
+            classes = 'qsJerome qsThoth ipa xs ls readName no'.split(' '),
+            className = '',
+            elem = null;
+        
+        for (; i!=classes.length; ++i) {
+            className = classes[i];
+            elem = $$('[name=' + className + ']')
+            if (elem.addEventListener) {
+                elem.addEventListener('change', function() { toggleDisplay(elem, className); }, false);
+            } else if (elem.attachEvent) {
+                elem.attachEvent('onchange', function() { toggleDisplay(elem, className); })
+            }
+                
+        }
+    /*
+        $$('input[name=qsJerome]').addEventListener('change', function() {
+            addGlobalStyle('.qsJerome { display: table-row; } .qsThoth { display: none; }');
+        }, false);
     
+        $$('input[name=qsThoth]').addEventListener('change', function() {
+            addGlobalStyle('.qsThoth { display: table-row; } .qsJerome { display: none; }');
+        }, false);
+    */
+    })();    
 </script>
  
 </body>
