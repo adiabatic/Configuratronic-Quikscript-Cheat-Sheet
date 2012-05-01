@@ -411,12 +411,16 @@
         "use strict";
         function $(id) { return document.getElementById(id); }
         function $$(selector) { return document.querySelector(selector); }
-        function dqs(selector) { return document.querySelector(selector); }
-        function $$$(selector) { return document.querySelectorAll(selector); }
+
         function addGlobalStyle(css) {
             var style = document.createElement('style');
-            style.innerHTML = css;
-            $$('head').appendChild(style);
+            style.setAttribute('type', 'text/css'); // IE needs this to get a .styleSheet JS attr
+            if (style.styleSheet) {
+                style.styleSheet.cssText = css;  // IE 8, maybe and older
+            } else {
+                style.innerHTML = css;
+            }
+            document.getElementsByTagName('head')[0].appendChild(style);
         }
         
         function toggleDisplay(elem, className) {
@@ -435,23 +439,28 @@
         
         for (; i!=classes.length; ++i) {
             className = classes[i];
-            elem = $$('[name=' + className + ']')
+            // no, really; the element with an id of X controls all the elements with a class of X
+            elem = document.getElementById(className);
+
+            var toggler = function toggler() {
+                return function (elem, className) {
+                    toggleDisplay(elem, className);
+                }(elem, className)
+            };
+
             if (elem.addEventListener) {
-                elem.addEventListener('change', function() { toggleDisplay(elem, className); }, false);
+            // this technique binds `elem` and `className` so they stay frozen and aren't changed
+            // with every iteration of the for-loop
+                elem.addEventListener('change', function (elem, className) {
+                    return function () {toggleDisplay(elem, className)};
+                    }(elem, className), false);
             } else if (elem.attachEvent) {
-                elem.attachEvent('onchange', function() { toggleDisplay(elem, className); })
+                elem.attachEvent('onchange', function (elem, className) {
+                    return function () {toggleDisplay(elem, className)};
+                    }(elem, className))
             }
                 
         }
-    /*
-        $$('input[name=qsJerome]').addEventListener('change', function() {
-            addGlobalStyle('.qsJerome { display: table-row; } .qsThoth { display: none; }');
-        }, false);
-    
-        $$('input[name=qsThoth]').addEventListener('change', function() {
-            addGlobalStyle('.qsThoth { display: table-row; } .qsJerome { display: none; }');
-        }, false);
-    */
     })();    
 </script>
  
