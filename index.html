@@ -60,7 +60,7 @@
         }
         
         /* hide these initially */
-        .qsJerome, .xs, .readName, .no, .ls {
+        .qsJerome, .xs, .readName, .no, .ls, .pua {
             display: none;
         }
         
@@ -154,6 +154,18 @@
         <td>9
         <td>10
         <td>11
+    <tr class='pua'>
+        <td>E650
+        <td>E651
+        <td>E652
+        <td>E653
+        <td>E654
+        <td>E655
+        <td>E656
+        <td>E657
+        <td>E658
+        <td>E659
+        <td>E65A
 </table>
 <table>
     <tr class='qsJerome'>
@@ -228,6 +240,18 @@
         <td>20
         <td>21
         <td>22
+    <tr class='pua'>
+        <td>E65B
+        <td>E65C
+        <td>E65D
+        <td>E65E
+        <td>E65F
+        <td>E660
+        <td>E661
+        <td>E662
+        <td>E663
+        <td>E664
+        <td>E665
 </table>
 <table>
     <tr class='qsJerome'>
@@ -300,6 +324,16 @@
         <td>29
         <td>30
         <td>31
+    <tr class='pua'>
+        <td>E666
+        <td>E667
+        <td>E668
+        <td>E670
+        <td>E671
+        <td>E672
+        <td>E673
+        <td>E674
+        <td>E675      
 </table>
 <table>
     <tr class='qsJerome'>
@@ -372,6 +406,16 @@
         <td>38
         <td>39
         <td>40
+    <tr class='pua'>
+        <td>E676
+        <td>E677
+        <td>E678
+        <td>E679
+        <td>E67A
+        <td>E67B
+        <td>E67C
+        <td>E67D
+        <td>E67E
 </table>
 
 <table id='abbreviations'>
@@ -437,8 +481,13 @@
         <input type='checkbox' name='no' id='no'>
         <label for='no'>Numbers</label>
     </div>
+    <div>
+    	<input type='checkbox' name='pua' id='pua'>
+    	<label for='pua'><abbr title='Private Use Area'>PUA</abbr> Codepoints</label>
+    </div>
     
     <p>Mystified? <a href='http://en.wikipedia.org/wiki/Quikscript'>Read</a>.</p>
+	<p><a href='https://github.com/adiabatic/Configuratronic-Quikscript-Cheat-Sheet'>Source</a> on GitHub.</p>
 </form>
 
 <script>
@@ -468,7 +517,7 @@
         
         
         var i = 0,
-            classes = 'qsJerome qsThoth ipa xs ls readName no'.split(' '),
+            classes = 'qsJerome qsThoth ipa xs ls readName no pua'.split(' '),
             className = '',
             elem = null;
         
