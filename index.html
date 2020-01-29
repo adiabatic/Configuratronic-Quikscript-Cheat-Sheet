@@ -29,9 +29,16 @@
         }
 
         html {
-            font-family: "Helvetica Neue", sans-serif;
+            font-family: system-ui, sans-serif;
             color: hsl(0, 0%, 92%);
             background: hsl(0, 0%, 20%);
+        }
+
+        @media (prefers-color-scheme: light) {
+            html {
+                color: black;
+                background: white;
+            }
         }
         
         table {
