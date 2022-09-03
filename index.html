@@ -48,6 +48,7 @@
         
         td {
             min-width: 2em;
+            padding-right: 4px;
         }
         
         .qsJerome {
@@ -75,10 +76,13 @@
             margin-top: 4em;
         }
         
-        form {
-            position: absolute;
-            top: 5.5em;
-            left: 39em;
+        #content {
+            display: flex;
+        }
+
+        #controls {
+            margin-top: 5em;
+            margin-left: 1em;
         }
                 
         a:link, a:visited {
@@ -87,501 +91,504 @@
     </style>
 </head>
 <body>
-<h1>Configuratronic Quikscript Cheat Sheet</h1>
-<table>
-    <tr class='qsJerome'>
-        <td>p</td>
-        <td>b</td>
-        <td>t</td>
-        <td>d</td>
-        <td>k</td>
-        <td>g</td>
-        <td>T</td>
-        <td>H</td>
-        <td>f</td>
-        <td>v</td>
-        <td>s</td>
-    </tr>
-    <tr class='qsThoth'>
-        <td>p</td>
-        <td>b</td>
-        <td>t</td>
-        <td>d</td>
-        <td>k</td>
-        <td>g</td>
-        <td>T</td>
-        <td>D</td>
-        <td>f</td>
-        <td>v</td>
-        <td>s</td>
-    </tr>
-    <tr class='ipa'>
-        <td>/p/</td>
-        <td>/b/</td>
-        <td>/t/</td>
-        <td>/d/</td>
-        <td>/k/</td>
-        <td>/g/</td>
-        <td>/θ/</td>
-        <td>/ð/</td>
-        <td>/f/</td>
-        <td>/v/</td>
-        <td>/s/</td>
-    </tr>
-    <tr class='xs'>
-        <td>/p/</td>
-        <td>/b/</td>
-        <td>/t/</td>
-        <td>/d/</td>
-        <td>/k/</td>
-        <td>/g/</td>
-        <td>/T/</td>
-        <td>/D/</td>
-        <td>/f/</td>
-        <td>/v/</td>
-        <td>/s/</td>
-    </tr>
-    <tr class='readName'>
-        <td>pea</td>
-        <td>bay</td>
-        <td>tea</td>
-        <td>day</td>
-        <td>key</td>
-        <td>gay</td>
-        <td>thaw</td>
-        <td>they</td>
-        <td>fee</td>
-        <td>vie</td>
-        <td>see</td>
-    </tr>
-    <tr class='zuckName'>
-        <td>pipe</td>
-        <td>bob</td>
-        <td>tut</td>
-        <td>deed</td>
-        <td>kick</td>
-        <td>gig</td>
-        <td>thoth</td>
-        <td>thither</td>
-        <td>fife</td>
-        <td>valve</td>
-        <td>sis</td>
-    </tr>
-    <tr class='no'>
-        <td>1</td>
-        <td>2</td>
-        <td>3</td>
-        <td>4</td>
-        <td>5</td>
-        <td>6</td>
-        <td>7</td>
-        <td>8</td>
-        <td>9</td>
-        <td>10</td>
-        <td>11</td>
-    </tr>
-    <tr class='pua'>
-        <td>E650</td>
-        <td>E651</td>
-        <td>E652</td>
-        <td>E653</td>
-        <td>E654</td>
-        <td>E655</td>
-        <td>E656</td>
-        <td>E657</td>
-        <td>E658</td>
-        <td>E659</td>
-        <td>E65A</td>
-    </tr>
-</table>
-<table>
-    <tr class='qsJerome'>
-        <td>z</td>
-        <td>S</td>
-        <td>Z</td>
-        <td>c</td>
-        <td>J</td>
-        <td>j</td>
-        <td>w</td>
-        <td>h</td>
-        <td>`</td>
-        <td>N</td>
-        <td>m</td>
-    </tr>
-    <tr class='qsThoth'>
-        <td>z</td>
-        <td>S</td>
-        <td>Z</td>
-        <td>C</td>
-        <td>j</td>
-        <td>y</td>
-        <td>w</td>
-        <td>h</td>
-        <td>P</td>
-        <td>N</td>
-        <td>m</td>
-    </tr>
-    <tr class='ipa'>
-        <td>/z/</td>
-        <td>/ʃ/</td>
-        <td>/ʒ/</td>
-        <td>/tʃ/</td>
-        <td>/dʒ/</td>
-        <td>/j/</td>
-        <td>/w/</td>
-        <td>/h/</td>
-        <td>/ʍ/</td>
-        <td>/ŋ/</td>
-        <td>/m/</td>
-    </tr>
-    <tr class='xs'>
-        <td>/z/</td>
-        <td>/S/</td>
-        <td>/Z/</td>
-        <td>/tS/</td>
-        <td>/dZ/</td>
-        <td>/j/</td>
-        <td>/w/</td>
-        <td>/h/</td>
-        <td>/W/</td>
-        <td>/N/</td>
-        <td>/m/</td>
-    </tr>
-     <tr class='readName'>
-        <td>zoo</td>
-        <td>she</td>
-        <td>j’ai</td>
-        <td>cheer</td>
-        <td>jay</td>
-        <td>ye</td>
-        <td>way</td>
-        <td>he</td>
-        <td>why</td>
-        <td>-ing</td>
-        <td>may</td>
-    </tr>
-    <tr class='zuckName'>
-        <td>zoos</td>
-        <td>shush</td>
-        <td>zhivago</td>
-        <td>church</td>
-        <td>judge</td>
-        <td>yo-yo</td>
-        <td>win-win</td>
-        <td>ha-ha</td>
-        <td>whitewheat</td>
-        <td>inkling</td>
-        <td>mime</td>
-    </tr>
-    <tr class='no'>
-        <td>12</td>
-        <td>13</td>
-        <td>14</td>
-        <td>15</td>
-        <td>16</td>
-        <td>17</td>
-        <td>18</td>
-        <td>19</td>
-        <td>20</td>
-        <td>21</td>
-        <td>22</td>
-    </tr>
-    <tr class='pua'>
-        <td>E65B</td>
-        <td>E65C</td>
-        <td>E65D</td>
-        <td>E65E</td>
-        <td>E65F</td>
-        <td>E660</td>
-        <td>E661</td>
-        <td>E662</td>
-        <td>E663</td>
-        <td>E664</td>
-        <td>E665</td>
-    </tr>
-</table>
-<table>
-    <tr class='qsJerome'>
-        <td>n</td>
-        <td>l</td>
-        <td>r</td>
-        <td>i</td>
-        <td>I</td>
-        <td>e</td>
-        <td>E</td>
-        <td>A</td>
-        <td>F</td>
-    </tr>
-    <tr class='qsThoth'>
-        <td>n</td>
-        <td>l</td>
-        <td>r</td>
-        <td>i</td>
-        <td>E</td>
-        <td>e</td>
-        <td>A</td>
-        <td>a</td>
-        <td>I</td>
-    </tr>
-    <tr class='ipa'>
-        <td>/n/</td>
-        <td>/l/</td>
-        <td>/ɹ/</td>
-        <td>/ɪ/</td>
-        <td>/i/</td>
-        <td>/ɛ/</td>
-        <td>/eɪ/</td>
-        <td>/æ/</td>
-        <td>/aɪ/</td>
-    </tr>
-    <tr class='xs'>
-        <td>/n/</td>
-        <td>/l/</td>
-        <td>/r\/</td>
-        <td>/I/</td>
-        <td>/i/</td>
-        <td>/E/</td>
-        <td>/eI/</td>
-        <td>/{/</td>
-        <td>/aI/</td>
-    </tr>
-    <tr class='ls'>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td>kit</td>
-        <td>fleece</td>
-        <td>dress</td>
-        <td>face</td>
-        <td>trap</td>
-        <td>price</td>
-    </tr>
-    <tr class='readName'>
-        <td>no</td>
-        <td>low</td>
-        <td>roe</td>
-        <td>it</td>
-        <td>eat</td>
-        <td>et</td>
-        <td>eight</td>
-        <td>at</td>
-        <td>I</td>
-    </tr>
-    <tr class='zuckName'>
-        <td>nun</td>
-        <td>loll</td>
-        <td>roar</td>
-        <td>if</td>
-        <td>eat</td>
-        <td>ed</td>
-        <td>age</td>
-        <td>ash</td>
-        <td>ice</td>
-    </tr>
-    <tr class='no'>
-        <td>23</td>
-        <td>24</td>
-        <td>25</td>
-        <td>26</td>
-        <td>27</td>
-        <td>28</td>
-        <td>29</td>
-        <td>30</td>
-        <td>31</td>
-    </tr>
-    <tr class='pua'>
-        <td>E666</td>
-        <td>E667</td>
-        <td>E668</td>
-        <td>E670</td>
-        <td>E671</td>
-        <td>E672</td>
-        <td>E673</td>
-        <td>E674</td>
-        <td>E675</td>
-    </tr>
-</table>
-<table>
-    <tr class='qsJerome'>
-        <td>y</td>
-        <td>Y</td>
-        <td>o</td>
-        <td>q</td>
-        <td>a</td>
-        <td>Q</td>
-        <td>O</td>
-        <td>U</td>
-        <td>M</td>
-    </tr>
-    <tr class='qsThoth'>
-        <td>R</td>
-        <td>Q</td>
-        <td>o</td>
-        <td>Y</td>
-        <td>u</td>
-        <td>W</td>
-        <td>O</td>
-        <td>V</td>
-        <td>U</td>
-    </tr>
-    <tr class='ipa'>
-        <td>/ɑ/</td>
-        <td>/ɔ/</td>
-        <td>/ɒ/</td>
-        <td>/ɔɪ/</td>
-        <td>/ə/</td>
-        <td>/aʊ/</td>
-        <td>/oʊ/ ~ /əʊ/</td>
-        <td>/ʊ/</td>
-        <td>/u/</td>
-    </tr>
-    <tr class='xs'>
-        <td>/A/</td>
-        <td>/O/</td>
-        <td>/Q/</td>
-        <td>/OI/</td>
-        <td>/@/</td>
-        <td>/aU/</td>
-        <td>/oU/ ~ /@U/</td>
-        <td>/U/</td>
-        <td>/u/</td>
-    </tr>
-    <tr class='ls'>
-        <td>palm</td>
-        <td>thought</td>
-        <td>lot</td>
-        <td>choice</td>
-        <td>comma</td>
-        <td>mouth</td>
-        <td>goat</td>
-        <td>foot</td>
-        <td>goose</td>
-    </tr>
-    <tr class='readName'>
-        <td>ah</td>
-        <td>awe</td>
-        <td>ox</td>
-        <td>oy</td>
-        <td>utter</td>
-        <td>out</td>
-        <td>owe</td>
-        <td>foot</td>
-        <td>ooze</td>
-    </tr>
-    <tr class='zuckName'>
-        <td>ah</td>
-        <td>awl</td>
-        <td>on</td>
-        <td>oil</td>
-        <td>ado</td>
-        <td>out</td>
-        <td>oak</td>
-        <td>wool</td>
-        <td>ooze</td>
-    </tr>
-    <tr class='no'>
-        <td>32</td>
-        <td>33</td>
-        <td>34</td>
-        <td>35</td>
-        <td>36</td>
-        <td>37</td>
-        <td>38</td>
-        <td>39</td>
-        <td>40</td>
-    </tr>
-    <tr class='pua'>
-        <td>E676</td>
-        <td>E677</td>
-        <td>E678</td>
-        <td>E679</td>
-        <td>E67A</td>
-        <td>E67B</td>
-        <td>E67C</td>
-        <td>E67D</td>
-        <td>E67E</td>
-    </tr>
-</table>
+    <div id="content">
+        <div id="cheatsheet">
+            <h1>Configuratronic Quikscript Cheat Sheet</h1>
+            <table>
+                <tr class='qsJerome'>
+                    <td>p</td>
+                    <td>b</td>
+                    <td>t</td>
+                    <td>d</td>
+                    <td>k</td>
+                    <td>g</td>
+                    <td>T</td>
+                    <td>H</td>
+                    <td>f</td>
+                    <td>v</td>
+                    <td>s</td>
+                </tr>
+                <tr class='qsThoth'>
+                    <td>p</td>
+                    <td>b</td>
+                    <td>t</td>
+                    <td>d</td>
+                    <td>k</td>
+                    <td>g</td>
+                    <td>T</td>
+                    <td>D</td>
+                    <td>f</td>
+                    <td>v</td>
+                    <td>s</td>
+                </tr>
+                <tr class='ipa'>
+                    <td>/p/</td>
+                    <td>/b/</td>
+                    <td>/t/</td>
+                    <td>/d/</td>
+                    <td>/k/</td>
+                    <td>/g/</td>
+                    <td>/θ/</td>
+                    <td>/ð/</td>
+                    <td>/f/</td>
+                    <td>/v/</td>
+                    <td>/s/</td>
+                </tr>
+                <tr class='xs'>
+                    <td>/p/</td>
+                    <td>/b/</td>
+                    <td>/t/</td>
+                    <td>/d/</td>
+                    <td>/k/</td>
+                    <td>/g/</td>
+                    <td>/T/</td>
+                    <td>/D/</td>
+                    <td>/f/</td>
+                    <td>/v/</td>
+                    <td>/s/</td>
+                </tr>
+                <tr class='readName'>
+                    <td>pea</td>
+                    <td>bay</td>
+                    <td>tea</td>
+                    <td>day</td>
+                    <td>key</td>
+                    <td>gay</td>
+                    <td>thaw</td>
+                    <td>they</td>
+                    <td>fee</td>
+                    <td>vie</td>
+                    <td>see</td>
+                </tr>
+                <tr class='zuckName'>
+                    <td>pipe</td>
+                    <td>bob</td>
+                    <td>tut</td>
+                    <td>deed</td>
+                    <td>kick</td>
+                    <td>gig</td>
+                    <td>thoth</td>
+                    <td>thither</td>
+                    <td>fife</td>
+                    <td>valve</td>
+                    <td>sis</td>
+                </tr>
+                <tr class='no'>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                </tr>
+                <tr class='pua'>
+                    <td>E650</td>
+                    <td>E651</td>
+                    <td>E652</td>
+                    <td>E653</td>
+                    <td>E654</td>
+                    <td>E655</td>
+                    <td>E656</td>
+                    <td>E657</td>
+                    <td>E658</td>
+                    <td>E659</td>
+                    <td>E65A</td>
+                </tr>
+            </table>
+            <table>
+                <tr class='qsJerome'>
+                    <td>z</td>
+                    <td>S</td>
+                    <td>Z</td>
+                    <td>c</td>
+                    <td>J</td>
+                    <td>j</td>
+                    <td>w</td>
+                    <td>h</td>
+                    <td>`</td>
+                    <td>N</td>
+                    <td>m</td>
+                </tr>
+                <tr class='qsThoth'>
+                    <td>z</td>
+                    <td>S</td>
+                    <td>Z</td>
+                    <td>C</td>
+                    <td>j</td>
+                    <td>y</td>
+                    <td>w</td>
+                    <td>h</td>
+                    <td>P</td>
+                    <td>N</td>
+                    <td>m</td>
+                </tr>
+                <tr class='ipa'>
+                    <td>/z/</td>
+                    <td>/ʃ/</td>
+                    <td>/ʒ/</td>
+                    <td>/tʃ/</td>
+                    <td>/dʒ/</td>
+                    <td>/j/</td>
+                    <td>/w/</td>
+                    <td>/h/</td>
+                    <td>/ʍ/</td>
+                    <td>/ŋ/</td>
+                    <td>/m/</td>
+                </tr>
+                <tr class='xs'>
+                    <td>/z/</td>
+                    <td>/S/</td>
+                    <td>/Z/</td>
+                    <td>/tS/</td>
+                    <td>/dZ/</td>
+                    <td>/j/</td>
+                    <td>/w/</td>
+                    <td>/h/</td>
+                    <td>/W/</td>
+                    <td>/N/</td>
+                    <td>/m/</td>
+                </tr>
+                <tr class='readName'>
+                    <td>zoo</td>
+                    <td>she</td>
+                    <td>j’ai</td>
+                    <td>cheer</td>
+                    <td>jay</td>
+                    <td>ye</td>
+                    <td>way</td>
+                    <td>he</td>
+                    <td>why</td>
+                    <td>-ing</td>
+                    <td>may</td>
+                </tr>
+                <tr class='zuckName'>
+                    <td>zoos</td>
+                    <td>shush</td>
+                    <td>zhivago</td>
+                    <td>church</td>
+                    <td>judge</td>
+                    <td>yo-yo</td>
+                    <td>win-win</td>
+                    <td>ha-ha</td>
+                    <td>whitewheat</td>
+                    <td>inkling</td>
+                    <td>mime</td>
+                </tr>
+                <tr class='no'>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                    <td>22</td>
+                </tr>
+                <tr class='pua'>
+                    <td>E65B</td>
+                    <td>E65C</td>
+                    <td>E65D</td>
+                    <td>E65E</td>
+                    <td>E65F</td>
+                    <td>E660</td>
+                    <td>E661</td>
+                    <td>E662</td>
+                    <td>E663</td>
+                    <td>E664</td>
+                    <td>E665</td>
+                </tr>
+            </table>
+            <table>
+                <tr class='qsJerome'>
+                    <td>n</td>
+                    <td>l</td>
+                    <td>r</td>
+                    <td>i</td>
+                    <td>I</td>
+                    <td>e</td>
+                    <td>E</td>
+                    <td>A</td>
+                    <td>F</td>
+                </tr>
+                <tr class='qsThoth'>
+                    <td>n</td>
+                    <td>l</td>
+                    <td>r</td>
+                    <td>i</td>
+                    <td>E</td>
+                    <td>e</td>
+                    <td>A</td>
+                    <td>a</td>
+                    <td>I</td>
+                </tr>
+                <tr class='ipa'>
+                    <td>/n/</td>
+                    <td>/l/</td>
+                    <td>/ɹ/</td>
+                    <td>/ɪ/</td>
+                    <td>/i/</td>
+                    <td>/ɛ/</td>
+                    <td>/eɪ/</td>
+                    <td>/æ/</td>
+                    <td>/aɪ/</td>
+                </tr>
+                <tr class='xs'>
+                    <td>/n/</td>
+                    <td>/l/</td>
+                    <td>/r\/</td>
+                    <td>/I/</td>
+                    <td>/i/</td>
+                    <td>/E/</td>
+                    <td>/eI/</td>
+                    <td>/{/</td>
+                    <td>/aI/</td>
+                </tr>
+                <tr class='ls'>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>kit</td>
+                    <td>fleece</td>
+                    <td>dress</td>
+                    <td>face</td>
+                    <td>trap</td>
+                    <td>price</td>
+                </tr>
+                <tr class='readName'>
+                    <td>no</td>
+                    <td>low</td>
+                    <td>roe</td>
+                    <td>it</td>
+                    <td>eat</td>
+                    <td>et</td>
+                    <td>eight</td>
+                    <td>at</td>
+                    <td>I</td>
+                </tr>
+                <tr class='zuckName'>
+                    <td>nun</td>
+                    <td>loll</td>
+                    <td>roar</td>
+                    <td>if</td>
+                    <td>eat</td>
+                    <td>ed</td>
+                    <td>age</td>
+                    <td>ash</td>
+                    <td>ice</td>
+                </tr>
+                <tr class='no'>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                    <td>29</td>
+                    <td>30</td>
+                    <td>31</td>
+                </tr>
+                <tr class='pua'>
+                    <td>E666</td>
+                    <td>E667</td>
+                    <td>E668</td>
+                    <td>E670</td>
+                    <td>E671</td>
+                    <td>E672</td>
+                    <td>E673</td>
+                    <td>E674</td>
+                    <td>E675</td>
+                </tr>
+            </table>
+            <table>
+                <tr class='qsJerome'>
+                    <td>y</td>
+                    <td>Y</td>
+                    <td>o</td>
+                    <td>q</td>
+                    <td>a</td>
+                    <td>Q</td>
+                    <td>O</td>
+                    <td>U</td>
+                    <td>M</td>
+                </tr>
+                <tr class='qsThoth'>
+                    <td>R</td>
+                    <td>Q</td>
+                    <td>o</td>
+                    <td>Y</td>
+                    <td>u</td>
+                    <td>W</td>
+                    <td>O</td>
+                    <td>V</td>
+                    <td>U</td>
+                </tr>
+                <tr class='ipa'>
+                    <td>/ɑ/</td>
+                    <td>/ɔ/</td>
+                    <td>/ɒ/</td>
+                    <td>/ɔɪ/</td>
+                    <td>/ə/</td>
+                    <td>/aʊ/</td>
+                    <td>/oʊ/ ~ /əʊ/</td>
+                    <td>/ʊ/</td>
+                    <td>/u/</td>
+                </tr>
+                <tr class='xs'>
+                    <td>/A/</td>
+                    <td>/O/</td>
+                    <td>/Q/</td>
+                    <td>/OI/</td>
+                    <td>/@/</td>
+                    <td>/aU/</td>
+                    <td>/oU/ ~ /@U/</td>
+                    <td>/U/</td>
+                    <td>/u/</td>
+                </tr>
+                <tr class='ls'>
+                    <td>palm</td>
+                    <td>thought</td>
+                    <td>lot</td>
+                    <td>choice</td>
+                    <td>comma</td>
+                    <td>mouth</td>
+                    <td>goat</td>
+                    <td>foot</td>
+                    <td>goose</td>
+                </tr>
+                <tr class='readName'>
+                    <td>ah</td>
+                    <td>awe</td>
+                    <td>ox</td>
+                    <td>oy</td>
+                    <td>utter</td>
+                    <td>out</td>
+                    <td>owe</td>
+                    <td>foot</td>
+                    <td>ooze</td>
+                </tr>
+                <tr class='zuckName'>
+                    <td>ah</td>
+                    <td>awl</td>
+                    <td>on</td>
+                    <td>oil</td>
+                    <td>ado</td>
+                    <td>out</td>
+                    <td>oak</td>
+                    <td>wool</td>
+                    <td>ooze</td>
+                </tr>
+                <tr class='no'>
+                    <td>32</td>
+                    <td>33</td>
+                    <td>34</td>
+                    <td>35</td>
+                    <td>36</td>
+                    <td>37</td>
+                    <td>38</td>
+                    <td>39</td>
+                    <td>40</td>
+                </tr>
+                <tr class='pua'>
+                    <td>E676</td>
+                    <td>E677</td>
+                    <td>E678</td>
+                    <td>E679</td>
+                    <td>E67A</td>
+                    <td>E67B</td>
+                    <td>E67C</td>
+                    <td>E67D</td>
+                    <td>E67E</td>
+                </tr>
+            </table>
 
-<table id='abbreviations'>
-    <tr class='abbreviationExpansion'>
-        <td>the</td>
-        <td>of</td>
-        <td>and</td>
-        <td>to</td>
-        <td>it</td>
-        <td>is</td>
-        <td>for</td>
-        <td>be</td>
-    </tr>
-    <tr class='qsJerome'>
-        <td>H</td>
-        <td>v</td>
-        <td>n</td>
-        <td>t</td>
-        <td>i</td>
-        <td>z</td>
-        <td>f</td>
-        <td>b</td>
-    </tr>
-    <tr class='qsThoth'>
-        <td>D</td>
-        <td>v</td>
-        <td>n</td>
-        <td>t</td>
-        <td>i</td>
-        <td>z</td>
-        <td>f</td>
-        <td>b</td>
-    </tr>
-</table>
-
-
-<form onsubmit='return false;'>
-    <div>
-        <input type='checkbox' name='qsThoth' id='qsThoth' checked>
-        <label for='qsThoth'>Thoth</label>
+            <table id='abbreviations'>
+                <tr class='abbreviationExpansion'>
+                    <td>the</td>
+                    <td>of</td>
+                    <td>and</td>
+                    <td>to</td>
+                    <td>it</td>
+                    <td>is</td>
+                    <td>for</td>
+                    <td>be</td>
+                </tr>
+                <tr class='qsJerome'>
+                    <td>H</td>
+                    <td>v</td>
+                    <td>n</td>
+                    <td>t</td>
+                    <td>i</td>
+                    <td>z</td>
+                    <td>f</td>
+                    <td>b</td>
+                </tr>
+                <tr class='qsThoth'>
+                    <td>D</td>
+                    <td>v</td>
+                    <td>n</td>
+                    <td>t</td>
+                    <td>i</td>
+                    <td>z</td>
+                    <td>f</td>
+                    <td>b</td>
+                </tr>
+            </table>
     </div>
-    <div>
-        <input type='checkbox' name='qsJerome' id='qsJerome'>
-        <label for='qsJerome'>Jerome</label>
+    <div id="controls">
+        <form onsubmit='return false;'>
+            <div>
+                <input type='checkbox' name='qsThoth' id='qsThoth' checked>
+                <label for='qsThoth'>Thoth</label>
+            </div>
+            <div>
+                <input type='checkbox' name='qsJerome' id='qsJerome'>
+                <label for='qsJerome'>Jerome</label>
+            </div>
+            
+            <div style='height: 1em;'> </div>
+            
+            <div>
+                <input type='checkbox' name='ipa' id='ipa' checked>
+                <label for='ipa'><abbr title='International Phonetic Alphabet'>IPA</abbr></label>
+            </div>
+            <div>
+                <input type='checkbox' name='xs' id='xs'>
+                <label for='xs'>X-SAMPA</label>
+            </div>
+            <div>
+                <input type='checkbox' name='ls' id='ls'>
+                <label for='ls'>Lexical Set Names</label>
+            </div>
+            <div>
+                <input type='checkbox' name='zuckName' id='zuckName'>
+                <label for='zuckName'>Jon Zuck’s Names</label>
+            </div>
+            <div>
+                <input type='checkbox' name='readName' id='readName'>
+                <label for='readName'>Read’s Names</label>
+            </div>
+            <div>
+                <input type='checkbox' name='no' id='no'>
+                <label for='no'>Numbers</label>
+            </div>
+            <div>
+                <input type='checkbox' name='pua' id='pua'>
+                <label for='pua'><abbr title='Private Use Area'>PUA</abbr> Codepoints</label>
+            </div>
+            
+            <p>Mystified? <a href='https://en.wikipedia.org/wiki/Quikscript'>Read</a>.</p>
+            <p><a href='https://github.com/adiabatic/Configuratronic-Quikscript-Cheat-Sheet'>Source</a> on GitHub.</p>
+        </form>
     </div>
-    
-    <div style='height: 1em;'> </div>
-    
-    <div>
-        <input type='checkbox' name='ipa' id='ipa' checked>
-        <label for='ipa'><abbr title='International Phonetic Alphabet'>IPA</abbr></label>
-    </div>
-    <div>
-        <input type='checkbox' name='xs' id='xs'>
-        <label for='xs'>X-SAMPA</label>
-    </div>
-    <div>
-        <input type='checkbox' name='ls' id='ls'>
-        <label for='ls'>Lexical Set Names</label>
-    </div>
-    <div>
-        <input type='checkbox' name='zuckName' id='zuckName'>
-        <label for='zuckName'>Jon Zuck’s Names</label>
-    </div>
-    <div>
-        <input type='checkbox' name='readName' id='readName'>
-        <label for='readName'>Read’s Names</label>
-    </div>
-    <div>
-        <input type='checkbox' name='no' id='no'>
-        <label for='no'>Numbers</label>
-    </div>
-    <div>
-    	<input type='checkbox' name='pua' id='pua'>
-    	<label for='pua'><abbr title='Private Use Area'>PUA</abbr> Codepoints</label>
-    </div>
-    
-    <p>Mystified? <a href='https://en.wikipedia.org/wiki/Quikscript'>Read</a>.</p>
-	<p><a href='https://github.com/adiabatic/Configuratronic-Quikscript-Cheat-Sheet'>Source</a> on GitHub.</p>
-</form>
-
+</div>
 <script>
     (function () {
         "use strict";
