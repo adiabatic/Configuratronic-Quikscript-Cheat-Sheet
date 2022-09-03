@@ -67,7 +67,7 @@
         }
         
         /* hide these initially */
-        .qsJerome, .xs, .readName, .no, .ls, .pua {
+        .qsJerome, .xs, .readName, .zuckName, .no, .ls, .pua {
             display: none;
         }
         
@@ -78,7 +78,7 @@
         form {
             position: absolute;
             top: 5.5em;
-            left: 35em;
+            left: 39em;
         }
                 
         a:link, a:visited {
@@ -149,6 +149,18 @@
         <td>fee
         <td>vie
         <td>see
+    <tr class='zuckName'>
+        <td>pipe
+        <td>bob
+        <td>tut
+        <td>deed
+        <td>kick
+        <td>gig
+        <td>thoth
+        <td>thither
+        <td>fife
+        <td>valve
+        <td>sis          
     <tr class='no'>
         <td>1
         <td>2
@@ -235,6 +247,18 @@
         <td>why
         <td>-ing
         <td>may
+    <tr class='zuckName'>
+        <td>zoos
+        <td>shush
+        <td>zhivago
+        <td>church
+        <td>judge
+        <td>yo-yo
+        <td>win-win
+        <td>ha-ha
+        <td>whitewheat
+        <td>inkling
+        <td>mime
     <tr class='no'>
         <td>12
         <td>13
@@ -321,6 +345,16 @@
         <td>eight
         <td>at
         <td>I
+    <tr class='zuckName'>
+        <td>nun
+        <td>loll
+        <td>roar
+        <td>if
+        <td>eat
+        <td>ed
+        <td>age
+        <td>ash
+        <td>if          
     <tr class='no'>
         <td>23
         <td>24
@@ -403,6 +437,16 @@
         <td>owe
         <td>foot
         <td>ooze
+    <tr class='zuckName'>
+        <td>ah
+        <td>awl
+        <td>ox
+        <td>oil
+        <td>ado
+        <td>out
+        <td>out
+        <td>wool
+        <td>ooze            
     <tr class='no'>
         <td>32
         <td>33
@@ -481,6 +525,10 @@
         <label for='ls'>Lexical Set Names</label>
     </div>
     <div>
+        <input type='checkbox' name='zuckName' id='zuckName'>
+        <label for='zuckName'>Jon Zuck’s Names</label>
+    </div>
+    <div>
         <input type='checkbox' name='readName' id='readName'>
         <label for='readName'>Read’s Names</label>
     </div>
@@ -524,7 +572,7 @@
         
         
         var i = 0,
-            classes = 'qsJerome qsThoth ipa xs ls readName no pua'.split(' '),
+            classes = 'qsJerome qsThoth ipa xs ls readName zuckName no pua'.split(' '),
             className = '',
             elem = null;
         
